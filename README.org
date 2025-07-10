@@ -73,7 +73,7 @@
 
 ** Usage Examples
    *** Git Operations
-     - Open ~lazygit~: Press ~<Leader>gg~ to launch TUI.
+     - Open ~lazygit~: Press ~<Leader>lg~ to launch TUI.
      - Stage hunks: Use ~s~ to stage, ~u~ to unstage.
      - Commit: Press ~c~, write message, ~<Enter>~ to commit.
      - Push: Press ~P~ to push to remote.
