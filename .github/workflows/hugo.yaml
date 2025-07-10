@@ -33,7 +33,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-        continue-on-error: true  # Allow workflow to continue if Pages setup fails initially
+        continue-on-error: true
       - name: Build with Hugo
         run: |
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url || 'https://bartender-mu.github.io/neovim/' }}"
