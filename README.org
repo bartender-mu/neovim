@@ -49,7 +49,7 @@
 ** Keybindings
    | Key            | Action                                    | Plugin/Feature       |
    |----------------+-------------------------------------------+---------------------|
-   | ~<Leader>gg~   | Open lazygit TUI                          | lazygit.nvim        |
+   | ~<Leader>lg~   | Open lazygit TUI                          | lazygit.nvim        |
    | ~<Space>s~     | Open surround menu (add/delete/change)    | surround-ui.nvim    |
    | ~<C-Space>~    | Trigger completion                        | coq.nvim            |
    | ~<C-j>~        | Jump to snippet placeholder               | coq.nvim            |
