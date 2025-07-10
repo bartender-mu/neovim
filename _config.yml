@@ -1,0 +1,17 @@
+# Site settings
+title: Neovim DevOps Hub
+description: Neovim configuration for sysadmin/DevOps with Ansible, Python, Terraform, and Org-mode
+baseurl: "" # "/docs" for Project Page
+url: "https://username.github.io" # Replace with your GitHub Pages URL
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-org
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
