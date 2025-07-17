@@ -1,0 +1,51 @@
+{
+  "js_function": {
+    "prefix": "func",
+    "body": [
+      "function ${1:name}(${2:params}) {",
+      "  $3",
+      "}"
+    ],
+    "description": "JavaScript function"
+  },
+  "js_async": {
+    "prefix": "async",
+    "body": [
+      "async function ${1:name}(${2:params}) {",
+      "  $3",
+      "}"
+    ],
+    "description": "JavaScript async function"
+  },
+  "js_promise": {
+    "prefix": "promise",
+    "body": [
+      "Promise.resolve(${1:value}).then(${2:result} => {",
+      "  $3",
+      "}).catch(${4:err} => {",
+      "  $5",
+      "})"
+    ],
+    "description": "JavaScript Promise"
+  },
+  "js_arrow": {
+    "prefix": "arrow",
+    "body": [
+      "(${1:params}) => {",
+      "  $2",
+      "}"
+    ],
+    "description": "JavaScript arrow function"
+  },
+  "js_class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName} {",
+      "  constructor(${2:params}) {",
+      "    $3",
+      "  }",
+      "}"
+    ],
+    "description": "JavaScript class"
+  }
+}

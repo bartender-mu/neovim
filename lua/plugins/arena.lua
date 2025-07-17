@@ -10,6 +10,7 @@ return {
         height = 10,
         border = 'rounded',
       },
+      include = { '%.yml$', '%.yaml$', '%.tf$', '%.org$', '%.md$', '%.js$', '%.ts$' },
     }
     vim.keymap.set('n', '<leader>ab', ':ArenaToggle<CR>', { noremap = true, silent = true }) -- <Space>ab
   end,

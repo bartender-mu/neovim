@@ -4,7 +4,16 @@ return {
   dependencies = { 'nvim-treesitter/nvim-treesitter-context' },
   config = function()
     require('nvim-treesitter.configs').setup {
-      ensure_installed = { 'python', 'yaml', 'bash', 'json', 'dockerfile', 'hcl', 'lua' },
+      ensure_installed = { 'python', 
+        'yaml', 
+        'bash', 
+        'json', 
+        'dockerfile', 
+        'hcl', 
+        'lua',
+        'javascript',
+        'typescript',
+      },
       highlight = { enable = true },
       indent = { enable = true, disable = { 'org' } },
       -- Enable bracket matching with vertical line

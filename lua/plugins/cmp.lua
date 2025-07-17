@@ -1,6 +1,6 @@
 return {
   'hrsh7th/nvim-cmp',
-  enabled = false, -- Disable nvim-cmp to use coq.nvim
+  enabled = true, -- Disable nvim-cmp to use coq.nvim
   dependencies = { 'hrsh7th/cmp-nvim-lsp' },
   config = function()
     local cmp = require('cmp')

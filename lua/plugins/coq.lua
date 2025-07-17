@@ -1,0 +1,47 @@
+return {
+  {
+    'ms-jpq/coq_nvim',
+    branch = 'coq',
+    dependencies = {
+      { 'ms-jpq/coq.artifacts', branch = 'artifacts' },
+      { 'ms-jpq/coq.thirdparty', branch = '3p' },
+    },
+    init = function()
+      vim.g.coq_settings = {
+        auto_start = 'shut-up', -- Start COQ silently
+        keymap = {
+          recommended = false, -- Use custom keymaps
+          manual_complete = '<C-Space>', -- Manual completion
+          jump_to_mark = '<C-j>', -- Jump to snippet placeholder
+          bigger_preview = '<C-q>', -- Bigger preview window
+        },
+        clients = {
+          lsp = { enabled = true }, -- Enable LSP completion
+          snippets = { enabled = true }, -- Enable snippet completion
+          tabnine = { enabled = false }, -- Disable TabNine
+          third_party = { enabled = true }, -- Enable third-party sources
+        },
+        display = {
+          pum = { -- Popup menu settings
+            fast_close = true, -- Close popup quickly
+            y_max_len = 10, -- Max height of popup
+            y_ratio = 0.3, -- Ratio of window height
+          },
+          preview = { -- Preview window settings
+            border = 'rounded', -- Rounded border for preview
+            x_max_len = 80, -- Max width of preview
+          },
+        },
+      }
+    end,
+    config = function()
+      local coq = require('coq')
+      -- Configure third-party sources (e.g., shell, calculator)
+      -- require('coq_3p') {
+      --   { src = 'nvimlua', short_name = 'LUA' }, -- Neovim Lua API
+      --   { src = 'repl', short_name = 'SH' }, -- Shell REPL
+      --   { src = 'calc', short_name = 'CALC' }, -- Calculator
+      -- }
+    end,
+  },
+}

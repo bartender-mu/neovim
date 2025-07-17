@@ -20,8 +20,7 @@ vim.opt.signcolumn = 'yes'
 vim.opt.background = 'dark'
 
 -- Keymaps
-vim.keymap.set('n', '<leader>q', ':q<CR>', { noremap = true, silent = true }) -- <Space>q to quit
-vim.keymap.set('n', '<leader>Q', ':q!<CR>', { noremap = true, silent = true }) -- <Space>Q to force quit
+vim.keymap.set('n', '<leader>q', ':q!<CR>', { noremap = true, silent = true }) -- <Space>q to quit
 vim.keymap.set('n', 'dd', '"_dd', { noremap = true }) -- Delete line to black hole
 vim.keymap.set('n', 'D', '"_D', { noremap = true }) -- Delete to end of line to black hole
 vim.keymap.set('n', 'd', '"_d', { noremap = true }) -- Delete to black hole
