@@ -1,4 +1,4 @@
-baseURL = "/" # Update with your domain or leave as "/" for local
+baseURL = "https://bartender-mu.github.io/neovim/"
 languageCode = "en-us"
 title = "Bartender's Neovim Configuration"
 theme = "ananke"
@@ -20,5 +20,5 @@ theme = "ananke"
   weight = 2
 [[menu.main]]
   name = "GitHub"
-  url = "https://github.com/bartender-mu/neovim"
+  url = "https://github.com/bartender-mu/neovim/public"
   weight = 3
