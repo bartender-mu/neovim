@@ -37,10 +37,14 @@ jobs:
       - name: Build with Hugo
         run: |
           hugo --gc --minify
+      - name: Prepare artifact
+        run: |
+          mkdir -p ./temp
+          mv ./public/* ./temp/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./temp
   deploy:
     environment:
       name: github-pages
