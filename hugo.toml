@@ -1,0 +1,5 @@
+baseURL = "https://bartender-mu.github.io/neovim/public"
+languageCode = "en-us"
+title = "Bartender Neovim"
+theme = "ananke"
+
