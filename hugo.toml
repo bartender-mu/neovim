@@ -22,3 +22,7 @@ theme = "ananke"
   name = "GitHub"
   url = "https://github.com/bartender-mu/neovim"
   weight = 3
+[[menu.main]]
+  name = "Post"
+  url = "https://github.com/bartender-mu/neovim/posts"
+  weight = 4
