@@ -34,5 +34,6 @@ return {
     }
     require('telescope').load_extension('media_files')
     vim.keymap.set('n', '<Leader>fm', ':Telescope media_files<CR>', { noremap = true, silent = true, desc = 'Media Files' })
+    vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true, desc = 'fuzzy find files'})
   end,
 }
